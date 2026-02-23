@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="envelope-wrapper" class="envelope-wrapper">
+        <div class="envelope" id="envelope-main">
+            <div class="envelope-body">
+                <div class="envelope-content">
+                    <div class="mail-icon-container">
+                        <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <p class="click-text">Click to Open</p>
+                    </div>
+                </div>
+            </div>
+            <div class="envelope-flap" id="envelope-flap"><div class="flap-inner"></div></div>
+            <div class="seal" id="envelope-seal"><div class="seal-inner"></div></div>
+        </div>
+        <p class="envelope-hint" id="envelope-hint">You have a special message</p>
+    </div>
+
+    <div id="letter-overlay" class="overlay hidden">
+        <div class="letter-wrapper" id="letter-wrapper">
+            <button id="close-btn" class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+            <div class="letter-paper">
+                <div class="letter-header"><h2>A Special Letter</h2></div>
+                <div class="letter-content-area" id="page-container"></div>
+                <div class="letter-footer">
+                    <button id="prev-btn" class="nav-btn" disabled>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <div class="dots-container" id="dots-container"></div>
+                    <button id="next-btn" class="nav-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="page-counter" class="page-counter"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
