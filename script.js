@@ -37,10 +37,6 @@ function renderPage() {
     pages.forEach((data, i) => {
         const div = document.createElement('div');
         div.className = `page ${i === currentPage ? 'page-center' : (i < currentPage ? 'page-left' : 'page-right')}`;
-        // add extra top margin specifically to the second page
-        if (i === 1) {
-            div.classList.add('page-second');
-        }
         div.innerHTML = `
             <div style="text-align:center">
                 <span style="font-size:3rem">${data.decoration}</span>
@@ -78,4 +74,5 @@ document.getElementById('close-btn').addEventListener('click', () => {
     }, 600);
 
 });
+
 
