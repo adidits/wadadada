@@ -1,6 +1,8 @@
 const pages = [
     { title: 'Hello Baby!!!!', decoration: '💚', content: `Hi Baby!\n\nThank you for opening this letter. This is a special message crafted just for you.\n\nThis is just a message I want to give you as a late valentines gift.` },
-    { title: '', decoration: '💚', content: `I didn't expect my february to be this special. You made my month so much more meaningful and joyful.` },
+    { title: '', decoration: '💚', content: `I’m really glad that fate brought us together this February. Even though we’ve only met four times so far, each moment has felt meaningful and left me looking forward to the next. You have a way of making conversations feel easy and natural, and I appreciate the warmth you bring whenever we meet.
+I wanted to write this letter simply to let you know that I enjoy spending time with you and getting to know you better. I hope we’ll continue to share more experiences, stories, and laughter in the days ahead.
+` },
     { title: ' ', decoration: '💚', content: `May our path be filled with joy and growth. Thank you for being part of this incredible journey. To more adventures together, more love and more crying to come\n\nWith warm regards,\n I love you,\nYour baby, Trisan.💜🪻` }
 ];
 
@@ -76,3 +78,4 @@ document.getElementById('close-btn').addEventListener('click', () => {
     }, 600);
 
 });
+
