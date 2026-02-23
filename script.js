@@ -42,7 +42,7 @@ function renderPage() {
         div.innerHTML = `
             <div style="text-align:center">
                 <span style="font-size:3rem">${data.decoration}</span>
-                <h2 style="color:#15803d; margin:20px 0; font-size: 2rem;">${data.title}</h2>
+                <h2 style="color:#15803d; margin:20px 0; font-size: 1.5rem;">${data.title}</h2>
                 <p style="line-height:1.8; color:#333; font-size: 1.2rem; white-space:pre-line">${data.content}</p>
             </div>`;
         container.appendChild(div);
@@ -74,4 +74,5 @@ document.getElementById('close-btn').addEventListener('click', () => {
         isOpening = false;
         currentPage = 0;
     }, 600);
+
 });
